@@ -50,6 +50,9 @@ classdef EDXMap
             data = imgaussfilt(data, 5);
             imagesc(data); axis image;
             colormap magma
+            axis off
+            colorbar eastoutside
+            title(element)
         end
 
     end
